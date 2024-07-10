@@ -61,7 +61,7 @@ require_once("layouts/Toast.php");
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/hostay/admin/">Trang chủ</a></li>
-          <li class="breadcrumb-item active">Người nhân viên</li>
+          <li class="breadcrumb-item active">Nhân viên</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->

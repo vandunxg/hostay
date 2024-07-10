@@ -51,16 +51,31 @@ function getCollapsed(string $pos)
     </ul>
   </li><!-- End Components Nav -->
   <li class="nav-item">
-    <a class="nav-link <?=getCollapsed("em")?>" data-bs-target="#checkin-nav" data-bs-toggle="collapse" href="#">
+    <a class="nav-link <?=getCollapsed("em")?>" data-bs-target="#employee-nav" data-bs-toggle="collapse" href="#">
     <i class="bi bi-person-badge"></i></i><span>Nhân viên</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
-    <ul id="checkin-nav" class="nav-content collapse <?=getShow("em")?>" data-bs-parent="#sidebar-nav">
+    <ul id="employee-nav" class="nav-content collapse <?=getShow("em")?>" data-bs-parent="#sidebar-nav">
       <li>
         <a href="/hostay/admin/employee.php" class="<?=getActive("emlist")?>">
           <i class="bi bi-circle"></i><span>Danh sách</span>
         </a>
         <a href="/hostay/admin/addemployee.php" class="<?=getActive("emadd")?>">
           <i class="bi bi-circle"></i><span>Thêm nhân viên</span>
+        </a>
+      </li>
+    </ul>
+  </li><!-- End Checkin Nav -->
+  <li class="nav-item">
+    <a class="nav-link <?=getCollapsed("service")?>" data-bs-target="#service-nav" data-bs-toggle="collapse" href="#">
+    <i class="bi bi-bookmark-check"></i></i></i><span>Dịch vụ</span><i class="bi bi-chevron-down ms-auto"></i>
+    </a>
+    <ul id="service-nav" class="nav-content collapse <?=getShow("service")?>" data-bs-parent="#sidebar-nav">
+      <li>
+        <a href="/hostay/admin/service.php" class="<?=getActive("serviceList")?>">
+          <i class="bi bi-circle"></i><span>Danh sách</span>
+        </a>
+        <a href="/hostay/admin/addservice.php" class="<?=getActive("serviceAdd")?>">
+          <i class="bi bi-circle"></i><span>Thêm dịch vụ</span>
         </a>
       </li>
     </ul>
